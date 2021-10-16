@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header relative bg-hero-pattern w-full overflow-hidden h-24">
+            <div class="container pl-10 pr-10 lg:pl-4 lg:pr-4 relative z-10">
+                <nav class="nav pt-8 flex justify-between items-center font-montserrat font-medium">
+                    <div class="w-1/5 xl:w-1/6 md:w-1/3 sm:w-1/2">
+                        <a href=""><img class="sm:w-60" src="../assets/img/png/logo.png" alt=""></a>
+                    </div>
+                    <ul class="flex justify-between w-32">
+                        <li class="nav__link btn-sign-in cursor-pointer">Войти</li>
+                        <li class="nav__link  cursor-pointer">Язык</li>
+                    </ul>
+                </nav>
+                <div class="sign-in-fixed hidden fixed top-0 left-0 w-full h-screen bg-black_light">
+                    <div class="sign-in w-100 h-100 lg:w-96 lg:h-screen -top-0 -right-0 absolute hidden bg-white pt-24 pl-10 pr-10 lg:pl-6 lg:pr-4">
+                        <h2 class="text-6xl lg:text-4xl font-montserrat font-medium">
+                            Добро пожаловать!
+                        </h2>
+                        <form class="mt-16 mb-20 relative" action="">
+                            <label class="cursor-pointer font-bold" for="userEmail">Войти в кабинет</label>
+                            <div class="flex items-center mt-4">
+                                <input class="w-full h-10 pl-5 pr-5 outline-none text-xl border-2 border-gray-400" id="userEmail" type="email" placeholder="Электронная почта" required>
+                                <button class="bg-primary_bg w-32 lg:w-24 h-10 flex items-center justify-center" type="submit">
+                                    <img class="" src="../assets/img/png/arrow.png" alt="">
+                                </button>
+                            </div>
+                        </form>
+                        <a class="text-xl underline hover:text-primary_bg"  href="">Регистрация</a>
+                        <img class="absolute top-10 cursor-pointer -left-6 close-signIn  lg:bg-white lg:p-6 lg:top-6 rounded-full" src="../assets/img/png/closepng.png" alt="">
+                    </div>
+                </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <section class="registration relative">
+        <div class="container">
+            
+        <div class="w-2/3 ml-auto h-100 bg-primary_bg"></div>
+
+            <div class="w-2/5 xl:w-2/4 lg:w-1/2 md:w-full h-auto  absolute top-16 xl:top-5 left-28 md:left-4">
+                <h2 class="text-3xl font-semibold">Регистрация</h2>
+            <form class="w-full h-auto bg-white shadow-lg p-10 mt-16 xl:mt-6">
+                <label class="text-xl xl:text-sm pl-6 cursor-pointer" for="userName">
+                    Имя, Фамилия <br>
+                    <input class="w-full outline-none border-b-4 xl:border-b-2 xl:h-8 h-12 mb-6 text-2xl border-gray-200 pl-6 pr-6 focus:border-primary_bg" type="text" id="userName" required>
+                </label> <br>
+                <label class="text-xl xl:text-sm pl-6 cursor-pointer" for="userEmail">
+                    Электронная почта <br>
+                    <input class="outline-none border-b-4 xl:border-b-2 xl:h-8 w-full h-12 mb-6 text-2xl border-gray-200 pl-6 pr-6 focus:border-primary_bg" type="email" id="userEmail" required>
+                </label><br>
+                <label class="text-xl xl:text-sm pl-6 cursor-pointer" for="userPhone">
+                    Номер телефона <br>
+                    <input class="outline-none border-b-4 xl:border-b-2 xl:h-8 w-full h-12 mb-6 text-2xl border-gray-200 pl-6 pr-6 focus:border-primary_bg" type="text" id="userPhone" required>
+                </label> <br>
+                <label class="ml-6 text-sm cursor-pointer" for="rad1">
+                    <input type="radio" name="rad" id="rad1" required>
+                    Соглашаюсь на обработку моих личных данных
+                </label>
+                <div class="mt-2">
+                    <label class="ml-6 text-sm cursor-pointer" for="rad2">
+                        <input type="radio" name="rad" id="rad2" required>
+                        Хочу получать новости от Weldman koolituskeskus
+                    </label>
+                </div>
+                <button class="w-52 h-10 mt-10 ml-6 rounded-3xl border-2 border-primary_bg text-primary_bg font-semibold text-lg hover:bg-primary_bg hover:text-white">Отправить</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/mask.js"></script>
+    <script src="../assets/js/signIn.js"></script>
+
+    <script>
+        // mask phone
+    $(document).ready(function() {
+    $("#userPhone").mask("+372 999-99-99");
+  });
+    </script>
+</body>
+</html>
