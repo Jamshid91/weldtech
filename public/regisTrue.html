@@ -16,11 +16,11 @@
                 <div class="w-1/5 xl:w-1/6 md:w-1/3 sm:w-1/2">
                     <a href=""><img class="sm:w-60" src="../assets/img/png/logo.png" alt=""></a>
                 </div>
-                <div class="w-1/3 xl:w-1/3 lg:w-28 flex items-center justify-between">
-                    <div class="">
+                <div class="w-1/3 xl:w-1/3 lg:w-40 flex items-center justify-between">
+                    <div class="sm:ml-2">
                         <span>Язык</span>
                     </div>
-                    <img class="cursor-pointer xl:mr-4 ml-8 w-6" src="../assets/img/png/warn.png" alt="">
+                    <img class="cursor-pointer xl:mr-4 ml-8 w-6 sm:ml-4" src="../assets/img/png/warn.png" alt="">
                     <div class="relative">
                         <div class="my-info relative cursor-pointer flex items-center justify-between w-56  lg:w-auto border-2 border-gray-400 p-2 lg:border-0">
                             <img src="../assets/img/png/user.png" alt="">
@@ -47,8 +47,8 @@
 
 <section>
     <div class="container pl-10 pr-10 lg:pl-4 lg:pr-4 text-text_black">
-        <div class="w-5/6 h-28 flex border-primary_bg border-2">
-            <div class="w-1/3 h-full flex items-center pl-6 text-2xl font-bold border-primary_bg border-r-2">
+        <div class="w-5/6 md:w-full h-28 sm:h-auto flex sm:flex-col border-primary_bg border-2 sm:pt-2 sm sm:pb-2">
+            <div class="w-1/3 h-full flex items-center pl-6 text-2xl font-bold border-primary_bg border-r-2 sm:border-r-0 sm:border-b-2 sm:w-full sm:pb-2">
                 Спасибо за регистрацию!
             </div>
             <div class="w-2/3 h-full flex items-center pl-6 text-xl">
@@ -58,11 +58,36 @@
     </div>
 </section>
 
-<section>
-    <div class="container bg-gray-50 pl-10 pr-10 lg:pl-4 lg:pr-4 text-text_black pt-20">
+<section class="mt-10">
+    <div class="container bg-gray-50 pl-10 pr-10 lg:pl-4 lg:pr-4 text-text_black pt-20 pb-10 sm:pl-2 sm:pr-2">
         <h3 class="text-xl font-semibold">Список курсов, на которые вы можете зарегестрироваться</h3>
-        <div class=""></div>
+        <div class="w-2/3 md:w-full ml-auto mr-auto bg-white">
+            <div class="w-full h-auto shadow-2xl pt-6 pb-6 pl-8 pr-14 mt-10 sm:p-2">
+                 <div class="w-2/3">
+                    <h4 class="text-xl leading-5 font-semibold">Lincoln Powertec 250C <br> W-135Bw-FM-1</h4>
+                        <p class="text-xl mb-2">описание</p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <img class="w-64 sm:w-48" src="../assets/img/master3.jpg" alt="">
+                    <button class="w-52 sm:w-32 h-14 sm:h-12 border-primary_bg border-2 text-lg sm:text-sm rounded-xl hover:bg-primary_bg hover:text-white">Добавить курс</button>
+                </div>
+            </div>
+        </div>
+        <div class="w-2/3 md:w-full ml-auto mr-auto bg-white">
+            <div class="w-full h-auto shadow-2xl pt-6 pb-6 pl-8 pr-14 mt-10 sm:p-2">
+                 <div class="w-2/3">
+                    <h4 class="text-xl leading-5 font-semibold">Полуавтомат.  <br> Многопроходный</h4>
+                        <p class="text-xl mb-2">описание</p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <img class="w-64 sm:w-48" src="../assets/img/master6.png" alt="">
+                    <button class="w-52 sm:w-32 h-14 sm:h-12 border-primary_bg border-2 text-lg sm:text-sm rounded-xl hover:bg-primary_bg hover:text-white">Добавить курс</button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<script src="../assets/js/profileSt.js"></script>
 </body>
 </html>
