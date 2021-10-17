@@ -51,7 +51,24 @@
 .container {
     max-width: 1920px;
 }
-
+.flexBox {
+    display: block;
+}
+.rotateBox {
+    transform: rotate(180deg);
+}
+.all-courses-scroll::-webkit-scrollbar {
+    width: 2px;
+  }
+   
+  .all-courses-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .all-courses-scroll::-webkit-scrollbar-thumb {
+    background-color: #26225E;
+    outline: 1px solid slategrey;
+  }
 @layer base {
     .nav__link {
         @apply border-b-2 border-transparent transition hover:border-primary_bg;
@@ -61,7 +78,7 @@
 
 @layer base {
     .video-tutorials-item {
-        @apply w-1/4 ml-20 mb-10 text-center  lg:w-1/3 lg:ml-5 sm:w-1/2;
+        @apply w-1/3 p-5 mb-10 text-center  lg:w-1/3 lg:ml-5 sm:w-full sm:ml-0;
     } 
 }
 
@@ -82,6 +99,7 @@
         @apply w-full h-20 bg-primary_bg absolute -bottom-20 left-0 z-10 transition text-white text-left font-medium text-lg pt-2 pl-10
     }
 }
+
 
 
 

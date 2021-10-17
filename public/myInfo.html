@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои данные</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header class="header relative bg-hero-pattern w-full h-32 md:h-56 sm:h-40">
+        <div class="container pl-10 pr-10 lg:pl-4 lg:pr-4 relative z-10">
+            <nav class="nav pt-8 flex justify-between items-center font-montserrat font-medium">
+                <div class="w-1/5 xl:w-1/6 md:w-1/3 sm:w-1/2">
+                    <a href=""><img class="sm:w-60" src="../assets/img/png/logo.png" alt=""></a>
+                </div>
+                <div class="w-1/4 xl:w-1/3 md:absolute md:top-28 md:left-0 md:pl-3 md:pr-3 md:w-full">
+                    <input class="w-full h-10 border-2 border-black pl-6 pr-6 rounded-full outline-none focus:border-primary_bg text-lg" type="search" placeholder="найти курс">
+                </div>
+                <div class="w-1/5 xl:w-1/3 lg:w-28 flex items-start justify-between">
+                    <img class="cursor-pointer xl:mr-4" src="../assets/img/png/warn.png" alt="">
+                    <div class="relative">
+                        <div class="my-info relative cursor-pointer flex items-center justify-between w-56 lg:w-auto border-2 border-gray-400 p-2 lg:border-0">
+                            <img src="../assets/img/png/user.png" alt="">
+                            <div class="flex items-center lg:hidden">
+                                <span><span>Имя</span>
+                                <span>Фамилия</span></span>
+                                <img class="ml-6" src="../assets/img/png/arrow-down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-info-list hidden w-56 h-32 border-2 bg-white border-t-0 border-gray-400 absolute t-10 l-0 lg:border-t-2 lg:right-0">
+                            <a href="">
+                                <div class="w-full p-2 pl-4 hover:bg-purple-50">Мои курсы</div>
+                            </a>
+                            <a href="">
+                                <div class="w-full p-2 pl-4 hover:bg-purple-50">Мои данные</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </div>
+</header>
+<!-- End header -->
+
+<section class="mt-10">
+    <div class="container">
+        <div class="absolute w-full h-full bg-gray-50 top-100 z-0"></div>
+        <div class="w-1/2 lg:w-full lg:flex lg:flex-col lg:items-center ml-auto mr-auto md:w-full md:flex md:items-center md:flex-col sm:p-6 ">
+            <div class="flex lg:items-center lg:justify-center text-4xl ml-10 font-bold cursor-pointer xl:text-3xl sm:text-xl lg:w-full lg:text-center  sm:mt-10 sm:mb-5 sm:m-0">
+                <h1 class="my__info pb-4 border-b-8  border-primary_bg">Мои данные</h1>
+                <h1 class="certificates pb-4 ml-20 sm:ml-10">Сертификаты</h1>
+            </div>
+            <div class="my-info-item w-100 sm:w-full  mt-20 pt-20 pl-10 pb-60 border-2 border-primary_bg bg-white relative z-10 text-xl text-primary_bg">
+                <p>Oleg Gazmanov</p>
+                <p class="mt-10 mb-10">+372 56568214</p>
+                <p>gazmanov@gmail.com</p>
+            </div>
+            <div class="certificates-item hidden w-100 sm:w-full  mt-20 pt-20 pl-10 pb-60 border-2 border-primary_bg bg-white relative z-10 text-xl text-primary_bg">
+                <p><span>certificates</span> <span class="ml-10">активен до </span></p>
+                <p class="mt-10 mb-10"><span class="text-red-600 font-medium">certificates</span> <span class="ml-10">подтвердить</span></p>
+                <p><span>certificates</span> <span class="ml-10">активен до </span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../assets/js/myInfo.js"></script>
+</body>
+</html>
