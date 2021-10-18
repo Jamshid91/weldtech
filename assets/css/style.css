@@ -57,17 +57,24 @@
 .rotateBox {
     transform: rotate(180deg);
 }
-.all-courses-scroll::-webkit-scrollbar {
-    width: 2px;
+.all-courses-scroll::-webkit-scrollbar,
+.test-process-item::-webkit-scrollbar {
+    width: 4px;
   }
    
-  .all-courses-scroll::-webkit-scrollbar-track {
+  .all-courses-scroll::-webkit-scrollbar-track,
+  .test-process-item::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
    
-  .all-courses-scroll::-webkit-scrollbar-thumb {
+  .all-courses-scroll::-webkit-scrollbar-thumb,
+  .test-process-item::-webkit-scrollbar-thumb {
     background-color: #26225E;
-    outline: 1px solid slategrey;
+    outline: 2px solid slategrey;
+  }
+  .lessonMaxHeight {
+      max-height: 56px;
+      overflow: hidden;
   }
 @layer base {
     .nav__link {

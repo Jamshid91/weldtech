@@ -2,7 +2,7 @@
   "name": "tailwind",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "build": "tailwind build assets/css/style.css -o public/style.css -w"
   },
