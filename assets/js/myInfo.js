@@ -21,6 +21,7 @@ let myInfoBtn = document.querySelector('.my-info');
 let myInfoList = document.querySelector('.my-info-list');
 
 myInfoBtn.addEventListener('click', () => {
+    myInfoBtn.classList.toggle('borderMyInfo')
     myInfoList.classList.toggle('flexBox');
-    myInfoBtn.children[3].classList.toggle('rotateBox')
+    myInfoBtn.children[1].children[1].classList.toggle('showArrow');
 });
