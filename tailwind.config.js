@@ -6,6 +6,7 @@ module.exports = {
       spacing: {
         '100': '30rem',
         '98': '28.5rem',
+        '84': '22rem',
       },
 
       colors: {
